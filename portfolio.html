@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Alyzza Marie A. Alerta | Portfolio</title>
+    <meta
+      name="description"
+      content="Professional portfolio of Alyzza Marie A. Alerta, aspiring software developer focused on web development, cybersecurity, and artificial intelligence."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="portfolio.js" defer></script>
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a href="#overview" class="mark">A<span>.</span>A</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <button class="tab-button active" type="button" data-tab="overview" aria-selected="true">Overview</button>
+          <button class="tab-button" type="button" data-tab="about" aria-selected="false">About</button>
+          <button class="tab-button" type="button" data-tab="skills" aria-selected="false">Skills</button>
+          <button class="tab-button" type="button" data-tab="projects" aria-selected="false">Projects</button>
+          <button class="tab-button" type="button" data-tab="certificates" aria-selected="false">Certificates</button>
+          <button class="tab-button" type="button" data-tab="education" aria-selected="false">Education</button>
+          <button class="tab-button" type="button" data-tab="resume" aria-selected="false">Resume</button>
+          <button class="tab-button" type="button" data-tab="contact" aria-selected="false">Contact</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="overview">
+      <section class="hero">
+        <div class="wrap hero-inner">
+          <div class="profile-panel">
+            <div class="avatar" aria-label="Profile photo">
+              <img
+                id="profileImage"
+                src="assets/profile.jpg"
+                alt="Alyzza Marie A. Alerta"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div id="profileFallback" class="fallback" aria-label="Profile initials">AA</div>
+            </div>
+            <div class="upload-row">
+              <label for="profileUpload" class="upload-btn" aria-label="Upload profile picture">Upload photo</label>
+              <input id="profileUpload" type="file" accept="image/*" />
+            </div>
+          </div>
+
+          <div class="hero-copy">
+            <div class="eyebrow-mark"><span class="dot"></span>Open to opportunities</div>
+            <h1 class="name">Alyzza Marie A. Alerta</h1>
+            <p class="title-line">
+              Aspiring Software Developer, working at the intersection of web development,
+              cybersecurity, and artificial intelligence.
+            </p>
+            <div class="terminal">
+              <span class="prompt">&gt;</span><span id="typed"></span><span class="cursor"></span>
+            </div>
+            <div class="hero-links" aria-label="Social links">
+              <a class="icon-btn" href="mailto:alertaalyzza2@gmail.com" aria-label="Email" title="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5C2 4.67 2.67 4 3.5 4h17c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5h-17C2.67 20 2 19.33 2 18.5v-13zm2 .58V18h16V6.08l-7.4 5.55a1 1 0 0 1-1.2 0L4 6.08zm.8-.58L12 10.5l7.2-5H4.8z"/></svg>
+              </a>
+              <span class="icon-btn static" aria-label="Phone" title="Phone">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              </span>
+              <a class="icon-btn" href="https://github.com/CrownKaizen" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+              </a>
+              <a class="icon-btn" href="https://www.linkedin.com/in/alyzza-marie-alerta-b64044329/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9z"/></svg>
+              </a>
+              <a class="icon-btn" href="https://web.facebook.com/alyzzamarie.astreroalerta/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.53-1.5H16.7V3.7c-.28-.04-1.25-.12-2.37-.12-2.35 0-3.96 1.43-3.96 4.06V9.9H8v3.1h2.37V21h3.13z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-shell">
+        <div class="wrap">
+          <div class="tab-panel active" data-panel="overview" aria-live="polite">
+            <div class="panel-surface">
+              <div class="section-head">
+                <p class="section-kicker">Professional overview</p>
+                <h2>Technology-focused, growth-driven, and ready for meaningful opportunities.</h2>
+              </div>
+
+              <div class="overview-grid">
+                <article class="summary-card">
+                  <span class="summary-label">Focus</span>
+                  <h3>Web development</h3>
+                  <p>Designing responsive, user-centered interfaces with practical business value.</p>
+                </article>
+
+                <article class="summary-card">
+                  <span class="summary-label">Area</span>
+                  <h3>Cybersecurity</h3>
+                  <p>Building awareness and skills around defensive, secure technology practices.</p>
+                </article>
+
+                <article class="summary-card">
+                  <span class="summary-label">Interest</span>
+                  <h3>AI</h3>
+                  <p>Exploring intelligent systems and their real-world applications in everyday solutions.</p>
+                </article>
+              </div>
+
+              <div class="overview-two-col">
+                <article class="info-card">
+                  <span class="summary-label">Profile</span>
+                  <h3>Who I am</h3>
+                  <p class="about-copy">
+                    I am an aspiring Software Developer with a growing interest in web development,
+                    cybersecurity, and artificial intelligence. I enjoy building practical, user-focused
+                    solutions and continuously expanding my technical skills through hands-on projects and
+                    industry-recognized certifications.
+                  </p>
+                </article>
+
+                <article class="info-card">
+                  <span class="summary-label">Highlights</span>
+                  <ul class="info-list">
+                    <li>Responsive web design experience</li>
+                    <li>Project-based learning mindset</li>
+                    <li>Strong interest in secure systems and AI</li>
+                    <li>Open to internships and junior roles</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="about" hidden>
+            <div class="panel-surface">
+              <div class="section-head">
+                <p class="section-kicker">About</p>
+                <h2>Building a career at the intersection of technology and problem-solving.</h2>
+              </div>
+
+              <div class="about-grid">
+                <div class="about-role">Professional summary</div>
+                <p class="about-copy">
+                  I am an aspiring Software Developer with a growing interest in web development,
+                  cybersecurity, and artificial intelligence. I enjoy building practical,
+                  user-focused solutions and continuously expanding my technical skills through
+                  hands-on projects and industry-recognized certifications. I am eager to learn,
+                  collaborate, and contribute to meaningful technology-driven projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="skills" hidden>
+            <div class="panel-surface">
+              <div class="section-head">
+                <p class="section-kicker">Skills</p>
+                <h2>Technical foundations and professional capabilities.</h2>
+              </div>
+
+              <div class="skill-section">
+                <div class="skill-category">Programming Languages</div>
+                <div class="chip-row">
+                  <span class="chip">Java</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">HTML5</span>
+                  <span class="chip">CSS3</span>
+                  <span class="chip">JavaScript</span>
+                  <span class="chip">SQL (MySQL)</span>
+                </div>
+              </div>
+
+              <div class="skill-section">
+                <div class="skill-category">Web Development</div>
+                <div class="chip-row">
+                  <span class="chip">Responsive Web Design</span>
+                  <span class="chip">Front-End Development</span>
+                </div>
+              </div>
+
+              <div class="skill-section">
+                <div class="skill-category">Cybersecurity &amp; AI</div>
+                <div class="chip-row">
+                  <span class="chip">Cybersecurity Fundamentals</span>
+                  <span class="chip">Artificial Intelligence</span>
+                </div>
+              </div>
+
+              <div class="skill-section">
+                <div class="skill-category">Tools &amp; Software</div>
+                <div class="chip-row">
+                  <span class="chip">Eclipse IDE</span>
+                  <span class="chip">Visual Studio Code</span>
+                  <span class="chip">GitHub</span>
+                  <span class="chip">Figma</span>
+                  <span class="chip">Canva</span>
+                </div>
+              </div>
+
+              <div class="skill-section">
+                <div class="skill-category">Soft Skills</div>
+                <div class="chip-row">
+                  <span class="chip">Problem Solving</span>
+                  <span class="chip">Team Collaboration</span>
+                  <span class="chip">Communication</span>
+                  <span class="chip">Adaptability</span>
+                  <span class="chip">Continuous Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="projects" hidden>
+            <div class="panel-surface">
+              <div class="section-head">
+                <p class="section-kicker">Projects</p>
+                <h2>Applied work that reflects initiative, creativity, and technical curiosity.</h2>
+              </div>
+
+              <div class="project-list">
+                <article class="project-item">
+                  <h3>AI-Based Rice Disease Detection with Hiligaynon Recommendation Support System</h3>
+                  <p class="project-copy">
+                    An AI-powered mobile application that detects rice diseases and gives
+                    recommendations in Hiligaynon. Built as an undergraduate capstone project,
+                    it focuses on assisting local farmers through accessible technology.
+                  </p>
+                  <div class="stack-row">
+                    <span class="tag">AI</span>
+                    <span class="tag">Mobile App</span>
+                    <span class="tag">Capstone Project</span>
+                  </div>
+                </article>
+
+                <article class="project-item">
+                  <h3>Snorlax Password Strength Checker</h3>
+                  <p class="project-copy">
+                    A responsive web application that evaluates password strength through an engaging
+                    interface inspired by Snorlax, demonstrating front-end development, responsive design,
+                    and interactive user experience.
+                  </p>
+                  <div class="stack-row">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                  </div>
+                </article>
+
+                <article class="project-item">
+                  <h3>Personal Web Development Projects</h3>
+                  <p class="project-copy">
+                    A series of web-based projects built to strengthen skills in HTML, CSS,
+                    JavaScript, and responsive web design while exploring modern UI design principles.
+                  </p>
+                  <div class="stack-row">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">UI Design</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="certificates" hidden>
+            <div class="panel-surface">
+              <div class="section-head">
+                <p class="section-kicker">Certificates</p>
+                <h2>Credentials that reflect continuous professional growth.</h2>
+              </div>
+
+              <div class="cert-actions">
+                <button id="addCertificateBtn" class="primary-btn" type="button">Add certificate</button>
+                <input id="certificateUpload" type="file" accept="image/*,.pdf,.doc,.docx" multiple hidden />
+              </div>
+
+              <div class="cert-grid" id="certificateGrid"></div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="education" hidden>
+            <div class="panel-surface">
+              <div class="section-head">
+                <p class="section-kicker">Education</p>
+                <h2>Academic foundation and recognition.</h2>
+              </div>
+
+              <div class="edu-block">
+                <h3>West Visayas State University — Pototan Campus</h3>
+                <p class="edu-meta">Bachelor of Science in Information Technology · 2023 – Present</p>
+                <ul class="awards">
+                  <li>Director's List</li>
+                  <li>Proficiency Award</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="resume" hidden>
+            <div class="panel-surface">
+              <div class="section-head">
+                <p class="section-kicker">Resume</p>
+                <h2>Professional snapshot in a concise formal format.</h2>
+              </div>
+
+              <div class="resume-toolbar">
+                <div></div>
+                <button class="print-btn" type="button" onclick="window.print()">Print / Save as PDF</button>
+              </div>
+
+              <div class="resume-sheet">
+                <h3 class="r-name">Alyzza Marie A. Alerta</h3>
+                <p class="r-title">Aspiring Software Developer | Web Development, Cybersecurity &amp; AI</p>
+                <p class="r-contact">
+                  alertaalyzza2@gmail.com &nbsp;|&nbsp; 0991 542 3370 &nbsp;|&nbsp; github.com/CrownKaizen &nbsp;|&nbsp; linkedin.com/in/alyzza-marie-alerta
+                </p>
+
+                <h4>SUMMARY</h4>
+                <p>
+                  Aspiring Software Developer with a growing interest in web development, cybersecurity,
+                  and artificial intelligence. Enjoys building practical, user-focused solutions and
+                  continuously expands technical skills through hands-on projects and industry-recognized
+                  certifications. Eager to learn, collaborate, and contribute to meaningful technology-driven projects.
+                </p>
+
+                <h4>SKILLS</h4>
+                <p><strong>Programming Languages:</strong> Java, Python, HTML5, CSS3, JavaScript, SQL (MySQL)</p>
+                <p><strong>Web Development:</strong> Responsive Web Design, Front-End Development</p>
+                <p><strong>Cybersecurity &amp; AI:</strong> Cybersecurity Fundamentals, Artificial Intelligence</p>
+                <p><strong>Tools &amp; Software:</strong> Eclipse IDE, Visual Studio Code, GitHub, Figma, Canva</p>
+                <p><strong>Soft Skills:</strong> Problem Solving, Team Collaboration, Communication, Adaptability, Continuous Learning</p>
+
+                <h4>PROJECTS</h4>
+                <p class="r-job">AI-Based Rice Disease Detection with Hiligaynon Recommendation Support System</p>
+                <ul>
+                  <li>Developed an AI-powered mobile application that detects rice diseases and provides recommendations in Hiligaynon.</li>
+                  <li>Undergraduate capstone project focused on assisting local farmers through accessible technology.</li>
+                </ul>
+
+                <p class="r-job">Snorlax Password Strength Checker</p>
+                <ul>
+                  <li>Designed and developed a responsive web application that evaluates password strength.</li>
+                  <li>Built an engaging, Snorlax-inspired interface demonstrating front-end development and interactive UX.</li>
+                </ul>
+
+                <p class="r-job">Personal Web Development Projects</p>
+                <ul>
+                  <li>Built various web-based projects using HTML, CSS, JavaScript, and responsive design principles.</li>
+                  <li>Explored modern UI design principles to strengthen front-end development skills.</li>
+                </ul>
+
+                <h4>EDUCATION</h4>
+                <p class="r-job">West Visayas State University — Pototan Campus</p>
+                <p class="r-meta">Bachelor of Science in Information Technology, 2023 – Present</p>
+                <ul>
+                  <li>Achievements: Director's List, Proficiency Award</li>
+                </ul>
+
+                <h4>CERTIFICATIONS</h4>
+                <ul>
+                  <li>Introduction to Cybersecurity — Cisco Networking Academy</li>
+                  <li>AI Builders Conference with IBM Bob — Certificate of Participation</li>
+                  <li>Introduction to Python — SoloLearn</li>
+                  <li>Intermediate Python — SoloLearn</li>
+                  <li>Python Developer — SoloLearn</li>
+                  <li>Introduction to MySQL — SoloLearn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="contact" hidden>
+            <div class="panel-surface">
+              <div class="section-head">
+                <p class="section-kicker">Contact</p>
+                <h2>Reach out for internships, collaborations, or professional opportunities.</h2>
+              </div>
+
+              <div class="contact-list">
+                <a class="contact-item" href="mailto:alertaalyzza2@gmail.com" aria-label="Email Alyzza Marie A. Alerta">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M2 5.5C2 4.67 2.67 4 3.5 4h17c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5h-17C2.67 20 2 19.33 2 18.5v-13zm2 .58V18h16V6.08l-7.4 5.55a1 1 0 0 1-1.2 0L4 6.08zm.8-.58L12 10.5l7.2-5H4.8z"/></svg>
+                  </span>
+                  <span class="contact-meta">alertaalyzza2@gmail.com</span>
+                  <span class="contact-label">Email</span>
+                </a>
+
+                <div class="contact-item static" aria-label="Phone number" role="note">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                  </span>
+                  <span class="contact-meta">0991 542 3370</span>
+                  <span class="contact-label">Phone</span>
+                </div>
+
+                <a class="contact-item" href="https://github.com/CrownKaizen" target="_blank" rel="noopener" aria-label="GitHub profile">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+                  </span>
+                  <span class="contact-meta">github.com/CrownKaizen</span>
+                  <span class="contact-label">GitHub</span>
+                </a>
+
+                <a class="contact-item" href="https://www.linkedin.com/in/alyzza-marie-alerta-b64044329/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9z"/></svg>
+                  </span>
+                  <span class="contact-meta">linkedin.com/in/alyzza-marie-alerta</span>
+                  <span class="contact-label">LinkedIn</span>
+                </a>
+
+                <a class="contact-item" href="https://web.facebook.com/alyzzamarie.astreroalerta/" target="_blank" rel="noopener" aria-label="Facebook profile">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.53-1.5H16.7V3.7c-.28-.04-1.25-.12-2.37-.12-2.35 0-3.96 1.43-3.96 4.06V9.9H8v3.1h2.37V21h3.13z"/></svg>
+                  </span>
+                  <span class="contact-meta">facebook.com/alyzzamarie.astreroalerta</span>
+                  <span class="contact-label">Facebook</span>
+                </a>
+              </div>
+
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                  <label for="senderName">Your name</label>
+                  <input id="senderName" name="name" type="text" placeholder="Enter your name" required />
+                </div>
+                <div class="form-row">
+                  <label for="senderEmail">Your email</label>
+                  <input id="senderEmail" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+                <div class="form-row">
+                  <label for="senderMessage">Message</label>
+                  <textarea id="senderMessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button class="primary-btn contact-submit" type="submit">Send message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">Alyzza Marie A. Alerta — 2026</div>
+    </footer>
+  </body>
+</html>
