@@ -177,6 +177,15 @@ document.addEventListener('DOMContentLoaded', () => {
       issued: 'Issued 09/26/2026',
       expires: 'Expires 09/26/2027',
       description: 'Credential ID nwPXVnUf5w'
+    },
+    {
+      id: 'cert-picture-8',
+      name: 'Word 2016 - Features and Functionality',
+      issuer: 'Alison',
+      src: 'Picture8.png',
+      type: 'image',
+      issued: 'Date of Completion 12/10/23',
+      description: 'Final Assessment Score: 100% · Total Study Time: 0h 37m'
     }
   ];
 
